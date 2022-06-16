@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="PRODUCTOS">
+        <item>leche</item>
+        <item>Huevo</item>
+        <item>Pan</item>
+        <item>Mantequilla</item>
+    </string-array>
+
+</resources>

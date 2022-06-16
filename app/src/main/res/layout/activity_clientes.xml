@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CLIENTES">
+    <TextView
+        style="@style/textviewEstilo"
+        android:id="@+id/titulo"
+        android:text="VENTANA CLIENTES"
+        android:textSize="30dp"/>
+
+    <ListView
+        android:id="@+id/clients"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_below="@id/titulo"
+        android:layout_marginTop="2dp"
+        android:tooltipText="@string/lista_clientes"/>
+
+    <EditText
+        style="@style/EditextEstilo"
+        android:id="@+id/text_agregar"
+        android:layout_below="@+id/clients"
+        android:hint="Agregar cliente: Nombre y apellido"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_agregar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:text="@string/agregar"
+        android:onClick="agregar_clientes"
+        android:id="@+id/agregar"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_agregar"
+        android:id="@+id/eliminar"
+        android:text="@string/eliminar"
+        android:layout_margin="15dp"
+        android:onClick="eliminar_cliente"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_agregar"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:text="@string/regreso"
+        android:onClick="regresar"
+        android:id="@+id/regreso"/>
+
+</RelativeLayout>

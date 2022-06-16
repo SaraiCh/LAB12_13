@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/titulo"
+        style="@style/textviewEstilo"
+        android:contentDescription="PEDIDO"
+        android:layout_margin="25dp"
+        android:text="PEDIDO" />
+
+    <Spinner
+        android:id="@+id/products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:layout_marginHorizontal="35dp"></Spinner>
+
+    <EditText
+        style="@style/EditextEstilo"
+        android:id="@+id/precio"
+        android:hint="Precio"
+        android:layout_below="@+id/products" />
+
+    <EditText
+        android:id="@+id/cantidad"
+        style="@style/EditextEstilo"
+        android:layout_below="@+id/precio"
+        android:hint="Cantidad" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cantidad"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:onClick="Clientes"
+        android:textColor="@color/black"
+        android:text="Clientes"
+        android:id="@+id/clientes"/>
+
+    <TextView
+        android:id="@+id/txt_cliente"
+        style="@style/textviewEstilo"
+        android:layout_below="@id/clientes" />
+
+    <TextView
+        style="@style/textviewEstilo"
+        android:id="@+id/subtotal"
+        android:layout_below="@id/txt_cliente"
+        android:text="SUBTOTAL"/>
+    <TextView
+        style="@style/textviewEstilo"
+        android:id="@+id/igv"
+        android:layout_below="@id/subtotal"
+        android:text="IGV"/>
+    <TextView
+        style="@style/textviewEstilo"
+        android:id="@+id/total"
+        android:layout_below="@id/igv"
+        android:text="TOTAL"/>
+
+</RelativeLayout>

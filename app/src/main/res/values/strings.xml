@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LAB12_13</string>
+    <string name="regreso">REGRESAR</string>
+    <string name="agregar">AGREGAR</string>
+    <string name="eliminar">ELIMINAR</string>
+    <string name="lista_clientes">CLIENTES</string>
+    <string name="Spinner">SELECCIONE PRODUCTO</string>
+</resources>
